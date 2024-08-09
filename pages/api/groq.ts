@@ -1,4 +1,4 @@
-import { reqGroqAI } from "../utils/groq";
+import { reqGroqAI } from "../../utils/groq";
 
 export const config = {
   runtime: "edge",
@@ -13,11 +13,22 @@ const handler = async (req: Request): Promise<Response> => {
 
   try {
     const chatCompletion = await reqGroqAI(prompt);
-    return Response.json({
-      content: chatCompletion.choices[0]?.message?.content || "",
-    });
-  } catch (error) {
-    return Response.json({ message: "Internal Server Error" });
+    return new Response(
+      JSON.stringify({
+        bios: chatCompletion.choices[0]?.message?.content || "",
+      }),
+      {
+        headers: new Headers({
+          "Cache-Control": "no-cache",
+        }),
+      }
+    );
+
+    // .json({
+    //   content: chatCompletion.choices[0]?.message?.content || "",
+    // });
+  } catch (error: any) {
+    return new Response(error.message, { status: 500 });
   }
 };
 

@@ -53,13 +53,18 @@ const Home: NextPage = () => {
         }),
       });
       const data = await res.json();
-      console.log(data);
-      setGeneratedBios(data.content);
+      setGeneratedBios(data.bios);
       if (data.error) {
         throw new Error(data.error);
       }
     } catch (error) {
-      console.error(error);
+      toast.error("Gagal membuat bio", {
+        style: {
+          background: "#ff5d5d",
+          color: "#fff",
+        },
+        icon: "❌",
+      });
     } finally {
       scrollToBios();
       setLoading(false);
