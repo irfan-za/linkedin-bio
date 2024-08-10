@@ -23,10 +23,6 @@ const handler = async (req: Request): Promise<Response> => {
         }),
       }
     );
-
-    // .json({
-    //   content: chatCompletion.choices[0]?.message?.content || "",
-    // });
   } catch (error: any) {
     return new Response(error.message, { status: 500 });
   }
