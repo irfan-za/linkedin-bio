@@ -80,20 +80,22 @@ const Home: NextPage = () => {
 
       <Header />
       <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
-        <Image
-          src="/logo.png"
-          width={200}
-          height={200}
-          alt="LinkedIn Bio Generator Logo"
-        />
-        <h1 className="text-3xl mt-6 max-w-[708px] font-bold text-slate-900">
+        <div className="relative w-36 h-12 sm:w-48 sm:h-24">
+          <Image
+            src="/logo.png"
+            fill={true}
+            alt="LinkedIn Bio Generator Logo"
+            className="object-contain"
+          />
+        </div>
+        <h1 className="text-2xl sm:text-3xl mt-3 sm:mt-6 max-w-[708px] font-bold text-slate-900">
           Bikin bio LinkedIn profesional <br />
           dengan bantuan AI ✨
         </h1>
         <div className="mt-7"></div>
 
         <div className="max-w-xl w-full">
-          <div className="flex mt-10 items-center space-x-3">
+          <div className="flex mt-10 items-start sm:items-center space-x-3">
             <Image
               src="/1-black.png"
               width={30}
