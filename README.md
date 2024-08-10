@@ -2,8 +2,7 @@
 
 Transform your LinkedIn presence in seconds with our AI-powered professional bio generator.
 
-[![Linkedin Bio Generator](./public/thumnail.png)](https://bikin-linkedin-bio.vercel.app)
-
+[![Linkedin Bio Generator](./public/thumbnail.png)](https://bikin-linkedin-bio.vercel.app)
 
 ## How it Works
 
@@ -17,34 +16,35 @@ This application uses the Groq AI API to generate a customized LinkedIn bio. The
 ## Getting Started
 
 ### Prerequisites
+
 - Node.js installed on your machine.
 - A Groq AI API key.
 
 ### Installation
 
 1. Clone this repository:
-    ```bash
-    git clone https://github.com/irfan-za/linkedin-bio.git
-    ```
+   ```bash
+   git clone https://github.com/irfan-za/linkedin-bio.git
+   ```
 2. Navigate into the project directory:
-    ```bash
-    cd linkedin-bio
-    ```
+   ```bash
+   cd linkedin-bio
+   ```
 3. Install the dependencies:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ### Running the Application
 
 1. Create a `.env` file in the root directory and add your Groq AI API key:
-    ```plaintext
-    GROQ_API_KEY=your_groq_ai_api_key_here
-    ```
+   ```plaintext
+   GROQ_API_KEY=your_groq_ai_api_key_here
+   ```
 2. Start the development server:
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 3. Open your browser and go to `http://localhost:3000` to see the application in action.
 
 ## Resources

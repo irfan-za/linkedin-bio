@@ -79,8 +79,8 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
-        <div className="relative w-36 h-12 sm:w-48 sm:h-24">
+      <main className="flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-16">
+        <div className="relative w-36 h-12 sm:w-48 sm:h-12">
           <Image
             src="/logo.png"
             fill={true}
@@ -88,7 +88,7 @@ const Home: NextPage = () => {
             className="object-contain"
           />
         </div>
-        <h1 className="text-2xl sm:text-3xl mt-3 sm:mt-6 max-w-[708px] font-bold text-slate-900">
+        <h1 className="text-2xl sm:text-3xl mt-3 max-w-[708px] font-bold text-slate-900">
           Bikin bio LinkedIn profesional <br />
           dengan bantuan AI ✨
         </h1>
