@@ -95,14 +95,8 @@ const Home: NextPage = () => {
         <div className="mt-7"></div>
 
         <div className="max-w-xl w-full">
-          <div className="flex mt-10 items-start sm:items-center space-x-3">
-            <Image
-              src="/1-black.png"
-              width={30}
-              height={30}
-              alt="1 icon"
-              className="mb-5 sm:mb-0"
-            />
+          <div className="flex mt-10 items-center space-x-3">
+            <Image src="/1-black.png" width={30} height={30} alt="1 icon" />
             <p className="text-left font-medium">
               Masukkan pekerjaanmu{" "}
               <span className="text-slate-500">(atau skill, minat, hobi)</span>.
@@ -151,7 +145,7 @@ const Home: NextPage = () => {
             <>
               <div>
                 <h2
-                  className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto"
+                  className="sm:text-3xl text-2xl font-bold text-slate-900 mx-auto"
                   ref={bioRef}
                 >
                   Bio yang dihasilkan
